@@ -2,9 +2,11 @@
 
 **Um guia de utilitários táticos para Counter-Strike 2.**
 
-O SmokeLine é um aplicativo Android desenvolvido para facilitar o aprendizado e a consulta de granadas táticas no Counter-Strike 2 (CS2), reunindo tutoriais de smokes, flashes e outros recursos estratégicos em uma interface intuitiva e organizada.
+O SmokeLine 2.0 é uma evolução do projeto original [SmokeLine](https://github.com/ThiagoCastagnoli/SmokeLine), desenvolvido para facilitar o aprendizado e a consulta de granadas táticas no Counter-Strike 2 (CS2).
 
-A versão 2.0 está sendo reconstruída do zero com foco em arquitetura de software, manutenibilidade, qualidade de código e uma experiência moderna utilizando Jetpack Compose.
+Esta nova versão está sendo reconstruída do zero, com uma arquitetura mais organizada, tecnologias modernas do ecossistema Android e foco em manutenibilidade, escalabilidade e qualidade de código.
+
+O aplicativo tem como objetivo reunir tutoriais de smokes, flashes e outros recursos estratégicos em uma interface intuitiva, moderna e organizada.
 
 > **Status:** Em desenvolvimento.
 
@@ -84,16 +86,19 @@ A estrutura representa a organização proposta para o projeto e poderá evoluir
 ### Responsabilidades das camadas
 
 **Presentation**
+
 - Telas construídas com Jetpack Compose.
 - ViewModels responsáveis pelo estado e pelas ações da interface.
 - Estados de UI e tratamento de eventos.
 
 **Domain**
+
 - Entidades e regras de negócio.
 - Interfaces dos repositórios.
 - Casos de uso que representam operações específicas da aplicação.
 
 **Data**
+
 - Implementações dos repositórios.
 - Fontes de dados remotas ou locais.
 - Integração com serviços externos, incluindo Firebase quando aplicável.
